@@ -15,6 +15,7 @@ body {
 
 nav {
     font-size: 0.75rem;
+    font-weight: bold;
 }
 
 /* Nav */ 
@@ -29,13 +30,10 @@ nav ul {
     padding-left: 1.25em;
 }
 
-nav li:nth-child(2) {
-    font-weight: bold;
-}
-
 nav li:nth-last-child(2),
 nav li:last-child {
     margin-left: auto;
+    text-transform: uppercase;
 }
 
 nav li:last-child {
