@@ -13,33 +13,37 @@ body {
 
 /* Typography */
 
-nav {
+h1 {
     font-size: 0.75rem;
-    font-weight: bold;
 }
 
 /* Nav */ 
 
+nav,
+nav .container,
 nav ul {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     gap: 0.188em;
+}
+
+nav {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0 1.25em;
+}
+
+nav ul {
     list-style-type: none;
-    height: 3.688em;
-    padding-left: 1.25em;
+    gap: 2.5em;
 }
 
-nav li:nth-last-child(2),
-nav li:last-child {
-    margin-left: auto;
+nav li {
     text-transform: uppercase;
-}
-
-nav li:last-child {
-    padding-right: 1.25em;
 }
 
 nav img {
     width: 1.438em;
+    height: 1.438em;
 }
