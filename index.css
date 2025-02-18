@@ -14,7 +14,7 @@ body {
 /* Typography */
 
 h1 {
-    font-size: 0.75rem;
+    text-transform: capitalize;
 }
 
 /* Nav */ 
@@ -46,4 +46,11 @@ nav li {
 nav img {
     width: 1.438em;
     height: 1.438em;
+}
+
+.hero {
+    color: white;
+    min-height: 293px;
+    background: url("/images/article-image-hero.jpg");
+    background-size: cover;
 }
