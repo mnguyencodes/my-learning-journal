@@ -14,7 +14,17 @@ body {
 /* Typography */
 
 h1 {
-    font-size: 0.75rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* Flex Containers */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
 }
 
 /* Nav */ 
@@ -46,4 +56,21 @@ nav li {
 nav img {
     width: 1.438em;
     height: 1.438em;
+}
+
+.hero {
+    padding-top: 5.438em;
+    color: white;
+    min-height: 293px;
+    background: url("/images/article-image-hero.jpg");
+    background-size: cover;
+}
+
+.hero > time {
+    font-size: 0.75rem;
+    margin-bottom: 0.5em;
+}
+
+.hero > p {
+    line-height: 1.5;
 }
