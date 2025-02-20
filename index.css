@@ -20,7 +20,8 @@ h1 {
 
 /* Flex Containers */
 
-.hero {
+.hero,
+.blog {
     display: flex;
     flex-direction: column;
     padding-left: 1.25em;
@@ -58,11 +59,15 @@ nav img {
     height: 1.438em;
 }
 
+/* Hero */
+
 .hero {
     padding-top: 5.438em;
     color: white;
     min-height: 293px;
-    background: url("/images/article-image-hero.jpg");
+    background-color: #888;
+    background-blend-mode: multiply;
+    background-image: url("/images/article-image-hero.jpg");
     background-size: cover;
 }
 
@@ -73,4 +78,27 @@ nav img {
 
 .hero > p {
     line-height: 1.5;
+}
+
+/* Blogs */
+
+section > article.blog {
+    padding: 1.25em;
+    gap: 0.563em;
+}
+
+article.blog > img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+article.blog > time {
+    display: block;
+}
+
+/* Utility */
+
+.m0 {
+    margin: 0;
 }
