@@ -62,7 +62,9 @@ nav img {
     padding-top: 5.438em;
     color: white;
     min-height: 293px;
-    background: url("/images/article-image-hero.jpg");
+    background-color: #888;
+    background-blend-mode: multiply;
+    background-image: url("/images/article-image-hero.jpg");
     background-size: cover;
 }
 
