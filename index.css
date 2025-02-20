@@ -58,6 +58,8 @@ nav img {
     height: 1.438em;
 }
 
+/* Hero */
+
 .hero {
     padding-top: 5.438em;
     color: white;
@@ -75,4 +77,16 @@ nav img {
 
 .hero > p {
     line-height: 1.5;
+}
+
+/* Blogs */
+
+section > article.blog {
+    padding: 1.25em;
+}
+
+article.blog > img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
