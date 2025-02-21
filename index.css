@@ -109,6 +109,15 @@ article.blog > time {
     margin-top: 0.6em;
 }
 
+main > a.view-more {
+    display: block;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2.688em;
+}
+
 /* Utility */
 
 .m0 {
