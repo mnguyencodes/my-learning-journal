@@ -14,8 +14,22 @@ body {
 /* Typography */
 
 h1 {
+    font-size: 1.5rem;
     text-transform: capitalize;
     margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+time {
+    font-size: 0.875rem;
 }
 
 /* Flex Containers */
@@ -76,10 +90,6 @@ nav img {
     margin-bottom: 0.5em;
 }
 
-.hero > p {
-    line-height: 1.5;
-}
-
 /* Blogs */
 
 section > article.blog {
@@ -95,6 +105,34 @@ article.blog > img {
 
 article.blog > time {
     display: block;
+    text-transform: uppercase;
+    margin-top: 0.6em;
+}
+
+main > div.view-more-section {
+    font-weight: 700;
+    color: #000000;
+    margin-top: 1em;
+    margin-bottom: 2.688em;
+    text-align: center;
+}
+
+/* Footer */
+
+footer > h2,
+footer > p {
+    font-size: 0.75rem;
+}
+
+footer > p {
+    color: #D7D7D7;
+}
+
+footer {
+    color: #ECECEC;
+    padding: 2.313em 0;
+    text-align: center;
+    background-color: #202020;
 }
 
 /* Utility */
