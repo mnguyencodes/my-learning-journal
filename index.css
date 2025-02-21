@@ -109,13 +109,12 @@ article.blog > time {
     margin-top: 0.6em;
 }
 
-main > a.view-more {
-    display: block;
+main > div.view-more-section {
     font-weight: 700;
     color: #000000;
-    text-align: center;
     margin-top: 1em;
     margin-bottom: 2.688em;
+    text-align: center;
 }
 
 /* Footer */
