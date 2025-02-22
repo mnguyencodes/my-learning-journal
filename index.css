@@ -40,12 +40,25 @@ p {
     margin: 0;
 }
 
-a {
+time {
+    font-size: 0.875rem;
+}
+
+/* Links */
+a {  
     color: #000000;
 }
 
-time {
-    font-size: 0.875rem;
+a:hover {
+    color: #555;
+}
+
+a:active {
+    color: #555;
+}
+
+a:focus {
+    color: #555;
 }
 
 /* Flex Containers */
