@@ -18,6 +18,7 @@ h1 {
     font-size: 1.5rem;
     text-transform: capitalize;
     margin: 0;
+    padding: 0.333em 0;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.5;
+    margin: 0;
 }
 
 a {
@@ -39,12 +41,10 @@ time {
 
 /* Flex Containers */
 
-.hero,
-.blog {
+section.hero,
+section.blog {
     display: flex;
-    flex-direction: column;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+    padding: 1.25em;
 }
 
 /* Nav */ 
@@ -85,6 +85,8 @@ nav a {
 /* Hero */
 
 .hero {
+    flex-direction: column;
+    justify-content: end;
     padding-top: 5.438em;
     color: white;
     min-height: 293px;
@@ -102,7 +104,14 @@ nav a {
 /* Blogs */
 
 section.blog {
-    gap: 0.563em;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+}
+
+section.blog > article {
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .blog-text {
@@ -127,10 +136,6 @@ main > div.view-more-section {
 
 div.blog-container > img {
     width: 100%;
-}
-
-.blog {
-    padding: 1em;
 }
 
 /* Footer */
@@ -160,15 +165,8 @@ footer {
 /* Media Queries */
 
 @media (min-width: 620px) {
-    
+    section.hero,
     section.blog {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1em;
+        padding: 1.75em;
     }
-
-    section.blog > article {
-        flex: 1 300px;
-    }   
 }
