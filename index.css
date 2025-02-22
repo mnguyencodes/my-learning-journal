@@ -170,3 +170,14 @@ footer {
         padding: 1.75em;
     }
 }
+
+@media (min-width: 850px) {
+    section.hero,
+    section.blog {
+        padding: 2.75em;
+    }
+
+    section.blog {
+        gap: 1.75em;
+    }
+}
