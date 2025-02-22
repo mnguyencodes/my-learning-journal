@@ -192,8 +192,8 @@ footer {
 }
 
 @media (min-width: 850px) {
-
-    main {
+    main,
+    nav {
         max-width: 1080px;
         margin: 0 auto;
     }
