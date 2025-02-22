@@ -94,6 +94,7 @@ nav a {
     background-blend-mode: multiply;
     background-image: url("/images/article-image-hero.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .hero > time {
@@ -168,6 +169,11 @@ footer {
     section.hero,
     section.blog {
         padding: 1.75em;
+    }
+
+    section.hero {
+        background-image: url("/images/article-image-hero-large.jpg");
+        min-height: 391px;
     }
 }
 
