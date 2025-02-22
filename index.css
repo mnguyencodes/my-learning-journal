@@ -178,6 +178,12 @@ footer {
 }
 
 @media (min-width: 850px) {
+
+    body {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
     section.hero,
     section.blog {
         padding: 2.75em;
@@ -185,5 +191,9 @@ footer {
 
     section.blog {
         gap: 1.75em;
+    }
+
+    section.hero {
+        min-height: 488px;
     }
 }
