@@ -180,6 +180,10 @@ footer {
 /* Media Queries */
 
 @media (min-width: 620px) {
+    nav {
+        padding: 0.5em 1.75em;
+    }
+
     section.hero,
     section.blog {
         padding: 1.75em;
@@ -192,6 +196,10 @@ footer {
 }
 
 @media (min-width: 850px) {
+    nav {
+        padding: 1em 2.75em;
+    }
+
     main,
     nav {
         max-width: 1080px;
