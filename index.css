@@ -206,6 +206,10 @@ footer {
         background-image: url("/images/article-image-hero-large.jpg");
         min-height: 391px;
     }
+
+    section.hero > p {
+        width: 70%;
+    }
 }
 
 @media (min-width: 850px) {
@@ -222,6 +226,10 @@ footer {
     section.hero,
     section.blog {
         padding: 2.75em;
+    }
+
+    section.hero > p {
+        width: 60%;
     }
 
     section.blog {
