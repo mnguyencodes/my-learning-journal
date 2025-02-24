@@ -6,6 +6,7 @@
 
 html, 
 body {
+    background-color: #fcfcfc;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -46,7 +47,7 @@ time {
 
 /* Links */
 a {  
-    color: #000000;
+    color: #1C1C1C;
 }
 
 a:hover {
@@ -59,6 +60,11 @@ a:active {
 
 a:focus {
     color: #555;
+}
+
+a.img-link:hover,
+a.img-link:focus {
+    opacity: 0.85;
 }
 
 /* Flex Containers */
@@ -110,7 +116,7 @@ nav a {
     flex-direction: column;
     justify-content: end;
     padding-top: 5.438em;
-    color: white;
+    color: #FCFCFC;
     min-height: 293px;
     background-color: #888;
     background-blend-mode: multiply;
@@ -133,8 +139,15 @@ section.blog {
 }
 
 section.blog > article {
-    flex-grow: 1;
+    display: flex;
     flex-basis: 300px;
+    flex-grow: 1;
+}
+
+a img {
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 .blog-text {
@@ -151,13 +164,13 @@ div.blog-text > time {
 
 main > div.view-more-section {
     font-weight: 700;
-    color: #000000;
+    color: #1C1C1C;
     margin-top: 1em;
     margin-bottom: 2.688em;
     text-align: center;
 }
 
-div.blog-container > img {
+div.blog-container > a > img {
     width: 100%;
 }
 
@@ -206,6 +219,10 @@ footer {
         background-image: url("/images/article-image-hero-large.jpg");
         min-height: 391px;
     }
+
+    section.hero > p {
+        width: 70%;
+    }
 }
 
 @media (min-width: 850px) {
@@ -222,6 +239,10 @@ footer {
     section.hero,
     section.blog {
         padding: 2.75em;
+    }
+
+    section.hero > p {
+        width: 60%;
     }
 
     section.blog {
