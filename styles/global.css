@@ -25,27 +25,11 @@ main {
 /* Typography */
 
 h1 {
-    font-size: 1.5rem;
     text-transform: capitalize;
-    margin: 0;
-    padding: 0.333em 0;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-}
-
-time {
-    font-size: 0.875rem;
 }
 
 /* Links */
+
 a {  
     color: #1C1C1C;
 }
@@ -108,26 +92,6 @@ nav img {
 
 nav a {
     text-decoration: none;
-}
-
-/* Hero */
-
-.hero {
-    flex-direction: column;
-    justify-content: end;
-    padding-top: 5.438em;
-    color: #FCFCFC;
-    min-height: 293px;
-    background-color: #888;
-    background-blend-mode: multiply;
-    background-image: url("/images/article-image-hero.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.hero > time {
-    font-size: 0.75rem;
-    margin-bottom: 0.5em;
 }
 
 /* Blogs */
