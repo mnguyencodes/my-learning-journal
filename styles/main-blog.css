@@ -4,3 +4,13 @@ h1 {
     font-size: 2rem;
 }
 
+/* Layout */
+
+main {
+    padding: 1.25em;
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+}
