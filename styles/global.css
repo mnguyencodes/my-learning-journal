@@ -203,8 +203,7 @@ footer {
         padding: 1em 2.75em;
     }
 
-    main,
-    nav {
+    main {
         max-width: 1080px;
         margin: 0 auto;
     }
