@@ -6,7 +6,7 @@
 
 html, 
 body {
-    background-color: #fcfcfc;
+    background-color: #FCFCFC;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -20,6 +20,7 @@ body {
 
 main {
     flex: 1 0 auto;
+    margin-top: 2.5em;
 }
 
 /* Typography */
@@ -61,16 +62,24 @@ section.blog {
 
 /* Nav */ 
 
+header {
+    position: relative;
+    width: 100%;
+}
+
 nav,
-nav .container,
+nav > div.container,
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 0.188em;
 }
 
 nav {
+    background-color: #ECECEC;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
     font-size: 0.75rem;
     font-weight: bold;
     padding: 0 1.25em;
