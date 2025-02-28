@@ -33,6 +33,10 @@ p {
     line-height: 1.5;
 }
 
+time {
+    text-transform: uppercase;
+}
+
 /* Links */
 
 a {  
@@ -137,7 +141,6 @@ a img {
 
 div.blog-text > time {
     display: block;
-    text-transform: uppercase;
     margin-top: 1.2em;
 }
 
