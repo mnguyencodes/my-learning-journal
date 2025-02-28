@@ -29,6 +29,18 @@ h1 {
     text-transform: capitalize;
 }
 
+p {
+    line-height: 1.5;
+}
+
+p.blog-text {
+    margin-bottom: 1em;
+}
+
+time {
+    text-transform: uppercase;
+}
+
 /* Links */
 
 a {  
@@ -133,7 +145,6 @@ a img {
 
 div.blog-text > time {
     display: block;
-    text-transform: uppercase;
     margin-top: 1.2em;
 }
 

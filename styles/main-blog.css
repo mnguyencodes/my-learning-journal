@@ -7,7 +7,6 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
     margin: 0;
 }
 
@@ -17,6 +16,10 @@ time {
 
 /* Layout */
 
+h3 {
+    margin-top: 0;
+}
+
 img {
     padding-block: 2.25em;
 }
@@ -25,7 +28,7 @@ main {
     padding: 1.25em;
 }
 
-section.content {
+article.content {
     display: flex;
     flex-direction: column;
 }
