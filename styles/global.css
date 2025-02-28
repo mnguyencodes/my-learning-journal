@@ -33,6 +33,10 @@ p {
     line-height: 1.5;
 }
 
+p.blog-text {
+    margin-bottom: 1em;
+}
+
 time {
     text-transform: uppercase;
 }
