@@ -20,10 +20,6 @@ img {
     padding-block: 2.25em;
 }
 
-main {
-    padding: 1.25em;
-}
-
 article.content {
     display: flex;
     flex-direction: column;
