@@ -31,6 +31,7 @@ h1 {
 
 p {
     line-height: 1.5;
+    margin: 0;
 }
 
 p.blog-text {
@@ -68,7 +69,7 @@ a.img-link:focus {
 /* Flex Containers */
 
 section.hero,
-section.blog {
+section.blog-main {
     display: flex;
     padding: 1.25em;
 }
@@ -119,13 +120,13 @@ nav a {
 
 /* Blogs */
 
-section.blog {
+section.blog-main {
     flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
 }
 
-section.blog > article {
+section.blog-main > article {
     display: flex;
     flex-basis: 300px;
     flex-grow: 1;
@@ -189,6 +190,10 @@ footer {
     margin: 0;
 }
 
+.blog-padding {
+    padding: 1.25em;
+}
+
 /* Media Queries */
 
 @media (min-width: 620px) {
@@ -201,7 +206,7 @@ footer {
     }
 
     section.hero,
-    section.blog {
+    section.blog-main {
         padding: 1.75em;
     }
 
@@ -227,7 +232,7 @@ footer {
     }
 
     section.hero,
-    section.blog {
+    section.blog-main {
         padding: 2.75em;
     }
 
@@ -235,7 +240,7 @@ footer {
         width: 60%;
     }
 
-    section.blog {
+    section.blog-main {
         gap: 1.75em;
     }
 

@@ -1,1 +1,22 @@
-/* about-me CSS */
+/* Hero */
+
+section.hero {
+    flex-direction: column;
+}
+
+section.hero > h1 {
+    font-size: 2.125rem;
+}
+
+section.hero > h2 {
+    font-size: 1rem;
+}
+
+section.hero > img {
+    margin-block: -5em;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 0;
+}
