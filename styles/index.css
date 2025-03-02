@@ -38,3 +38,12 @@ time {
     margin-bottom: 0.5em;
 }
 
+/* Media Queries */
+
+@media (min-width: 620px) {
+
+    section.hero {
+        background-image: url("/images/article-image-hero-large.jpg");
+        min-height: 391px;
+    }
+}
