@@ -5,12 +5,12 @@ export default function Header() {
         <header>
             <nav>
                 <div className="container">
-                    <a href="/index.html"><img src="/images/logo.png" alt="My Learning Journal logo" /></a>
-                    <a href="/index.html"><p>My Learning Journal</p></a>
+                    <Link to="/index.html"><img src="/images/logo.png" alt="My Learning Journal logo" /></Link>
+                    <Link to="/index.html"><p>My Learning Journal</p></Link>
                 </div>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about-me.html">About Me</a></li>
+                    <li><Link to="/index.html">Home</Link></li>
+                    <li><Link to="/about-me.html">About Me</Link></li>
                 </ul>
             </nav>
         </header>
