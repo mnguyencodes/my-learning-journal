@@ -6,12 +6,12 @@ export default function Header() {
         <header>
             <nav>
                 <div className="container">
-                    <Link to="/index.html"><img src="/images/logo.png" alt="My Learning Journal logo" /></Link>
-                    <Link to="/index.html"><p>My Learning Journal</p></Link>
+                    <Link to="."><img src="/images/logo.png" alt="My Learning Journal logo" /></Link>
+                    <Link to="."><p>My Learning Journal</p></Link>
                 </div>
                 <ul>
-                    <li><Link to="/index.html">Home</Link></li>
-                    <li><Link to="/about-me.html">About Me</Link></li>
+                    <li><Link to=".">Home</Link></li>
+                    <li><Link to="about-me">About Me</Link></li>
                 </ul>
             </nav>
         </header>

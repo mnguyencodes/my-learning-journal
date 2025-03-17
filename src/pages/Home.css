@@ -110,6 +110,9 @@ div.home-blog-container > a > img {
     section.home-hero > p {
         width: 70%;
     }
+    main > div.home-view-more-section {
+        margin-bottom: 2em;
+    }
 }
 
 @media (min-width: 850px) {
@@ -135,6 +138,10 @@ div.home-blog-container > a > img {
 
     section.home-hero {
         min-height: 488px;
+    }
+
+    main > div.home-view-more-section {
+        margin-bottom: 1em;
     }
 }
 

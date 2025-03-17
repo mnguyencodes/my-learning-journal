@@ -1,9 +1,4 @@
 /* Footer */
-
-footer {
-    flex-shrink: 0;
-    width: 100%;
-}
   
   footer > h2,
   footer > p {
@@ -15,9 +10,13 @@ footer {
 }
   
   footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #ECECEC;
     padding: 2.313em 0;
-    text-align: center;
     background-color: #202020;
+    flex-shrink: 0;
+    margin-top: auto;
 }
-
