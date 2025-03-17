@@ -8,8 +8,7 @@ html, body {
   flex-direction: column;
   background-color: #FCFCFC;;
   font-family: "Roboto", sans-serif;
-  min-height: 100%;
-  max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
