@@ -1,7 +1,68 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 #root {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFC;;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+main {
+  margin-top: 2.5em;
+}
+
+/* Typography */
+
+h1 {
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+time {
+  text-transform: uppercase;
+}
+
+/* Links */
+
+a {  
+  color: #1C1C1C;
+}
+
+a:hover {
+  color: #555;
+}
+
+a:active {
+  color: #555;
+}
+
+a:focus {
+  color: #555;
+}
+
+a.img-link:hover,
+a.img-link:focus {
+  opacity: 0.85;
+  z-index: 1;
+}
+
+/* Utility */
+
+.m0 {
+  margin: 0;
+}
+
+.blog-padding {
+  padding: 1.25em;
 }
 
