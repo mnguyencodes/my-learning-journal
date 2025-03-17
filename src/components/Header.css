@@ -1,0 +1,55 @@
+/* Nav */ 
+
+header {
+    position: relative;
+    width: 100%;
+}
+  
+nav,
+nav > div.container,
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.188em;
+}
+  
+nav {
+  z-index: 1;
+  justify-content: space-between;
+  background-color: #ECECEC;
+  position: fixed;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0 1.25em;
+}
+  
+nav ul {
+  list-style-type: none;
+  gap: 2em;
+}
+  
+nav li {
+  text-transform: uppercase;
+}
+  
+nav img {
+  width: 1.438em;
+  height: 1.438em;
+}
+  
+nav a {
+  text-decoration: none;
+}
+
+@media (min-width: 620px) {
+  nav {
+      padding: 0.5em 1.75em;
+  }
+}
+
+@media (min-width: 850px) {
+  nav {
+      padding: 1em 2.75em;
+  }
+}
