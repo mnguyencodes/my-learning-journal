@@ -1,0 +1,23 @@
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+}
+  
+  footer > h2,
+  footer > p {
+    font-size: 0.75rem;
+}
+  
+  footer > p {
+    color: #D7D7D7;
+}
+  
+  footer {
+    color: #ECECEC;
+    padding: 2.313em 0;
+    text-align: center;
+    background-color: #202020;
+}
+
