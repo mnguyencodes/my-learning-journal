@@ -6,7 +6,7 @@ export default function AboutMe() {
             <section className="hero">
                 <h1>Welcome to Mark's Learning Journal</h1>
                 <h2>The CCNA Changed My Life</h2>
-                <img src="/images/ccna.png" />
+                <img src="/images/ccna.png" alt="CCNA"/>
             </section>
             <section className="blog blog-padding">
                 <article>
