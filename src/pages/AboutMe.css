@@ -1,1 +1,26 @@
 /* AboutMe */
+
+section.hero-about-me {
+    flex-direction: column;
+}
+
+section.hero-about-me > h1 {
+    font-size: 2.125rem;
+}
+
+section.hero-about-me > h2 {
+    font-size: 1rem;
+    z-index: 0;
+}
+
+section.hero-about-me > img {
+    margin-top: -3em;
+    margin-bottom: -5em;
+    max-width: 20em;
+    z-index: -1;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 0;
+}
