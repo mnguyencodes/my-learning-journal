@@ -10,7 +10,7 @@ export default function Header() {
                     <Link to="."><p>My Learning Journal</p></Link>
                 </div>
                 <ul>
-                    <li><Link to=".">Home</Link></li>
+                    <li><Link to="">Home</Link></li>
                     <li><Link to="about-me">About Me</Link></li>
                 </ul>
             </nav>

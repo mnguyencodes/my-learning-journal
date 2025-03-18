@@ -61,7 +61,10 @@ a.img-link:focus {
   margin: 0;
 }
 
-.blog-padding {
+.u-padding {
   padding: 1.25em;
 }
 
+.u-text-padding {
+  margin-bottom: 1em;
+}
