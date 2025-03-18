@@ -3,12 +3,12 @@ import "./AboutMe.css"
 export default function AboutMe() {
     return (
         <main>
-            <section className="hero">
+            <section className="u-padding hero-about-me">
                 <h1>Welcome to Mark's Learning Journal</h1>
                 <h2>The CCNA Changed My Life</h2>
                 <img src="/images/ccna.png" alt="CCNA"/>
             </section>
-            <section className="blog blog-padding">
+            <section className="u-padding">
                 <article>
                     <h3>The Start of my Learning Journey</h3>
                     <p>
