@@ -68,3 +68,8 @@ a.img-link:focus {
 .u-text-padding {
   margin-bottom: 1em;
 }
+
+.u-flex {
+  display: flex;
+  flex-direction: column;
+}
