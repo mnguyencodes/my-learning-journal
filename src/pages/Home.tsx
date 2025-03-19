@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 export default function Home() {
     return (
         <main>
-            <Link className="img-link" to="/main-blog.html"><section className="home-hero">
+            <Link className="img-link" to="/main-blog"><section className="home-hero">
                 <time dateTime="2025-01-12">January 12, 2025</time>
                 <h1>My new journey as a bootcamp student</h1>
                 <p>
