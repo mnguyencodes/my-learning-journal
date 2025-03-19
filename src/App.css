@@ -61,6 +61,10 @@ a.img-link:focus {
   margin: 0;
 }
 
+.u-img-margin {
+  margin-block: 1em;
+}
+
 .u-padding {
   padding: 1.25em;
 }
