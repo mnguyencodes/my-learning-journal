@@ -61,10 +61,19 @@ a.img-link:focus {
   margin: 0;
 }
 
+.u-img-margin {
+  margin-block: 1em;
+}
+
 .u-padding {
   padding: 1.25em;
 }
 
 .u-text-padding {
   margin-bottom: 1em;
+}
+
+.u-flex {
+  display: flex;
+  flex-direction: column;
 }
