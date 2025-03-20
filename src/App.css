@@ -16,6 +16,10 @@ main {
   margin-top: 2.5em;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Typography */
 
 h1 {
