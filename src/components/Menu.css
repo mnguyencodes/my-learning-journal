@@ -1,0 +1,14 @@
+div.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-top: 5em;
+    padding: 1em;
+}
+
+div.menu {
+    width: 1.5em;
+    height: 0.2em;
+    background-color: black;
+}
+

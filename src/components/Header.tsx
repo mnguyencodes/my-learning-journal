@@ -1,8 +1,10 @@
 import "./Header.css"
+import Menu from "./Menu"
 import {Link} from "react-router-dom"
 
 export default function Header() {
     return (
+        <>
         <header>
             <nav>
                 <div className="container">
@@ -15,6 +17,8 @@ export default function Header() {
                 </ul>
             </nav>
         </header>
+        <Menu />
+        </>
     )
 }
 
