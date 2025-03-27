@@ -1,0 +1,43 @@
+/* Menu */
+
+div.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5em;
+}
+
+/* MenuIcon - HamburgerIcon */
+
+div.hamburger {
+    width: 1.5em;
+    height: 0.2em;
+    background-color: black;
+}
+
+/* MenuItem */
+
+a.menu-item-link {
+    padding-inline: 1em;
+    margin-block: 1.5em;
+}
+
+/* MenuDropdown */
+
+.menu-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+div.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    width: auto;
+    padding: 1em;
+    margin-block: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
