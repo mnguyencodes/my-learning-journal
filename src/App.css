@@ -6,7 +6,7 @@ html, body {
 #root {
   display: flex;
   flex-direction: column;
-  background-color: #FCFCFC;;
+  background-color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
   margin: 0 auto;
