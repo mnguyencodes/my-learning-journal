@@ -1,7 +1,17 @@
 import "./Header.css"
 import Menu from "./Menu/index"
 import {Link} from "react-router-dom"
-
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+  } from "@/components/ui/navigation-menu"
+  
 
 import {useState} from "react"
 
@@ -32,20 +42,32 @@ export default function Header() {
         <>
         <header>
             <nav>
-                <Link to=".">
+
+                <Link className="nav-item-logo" to=".">
                     <div className="container">
                         <img src="/images/logo.png" alt="My Learning Journal logo" />
                         <p>My Learning Journal</p>
                     </div>
                 </Link>
-                <Menu.Menu onOpen={increment}>
-                    <Menu.MenuIcon />
-                    <Menu.MenuDropdown>
-                        <Menu.MenuItem to=".">Item1</Menu.MenuItem>
-                        <Menu.MenuItem to=".">Item2</Menu.MenuItem>
-                        <Menu.MenuItem to=".">Item3</Menu.MenuItem>
-                    </Menu.MenuDropdown>
-                </Menu.Menu>
+                {/* <h2 className="text-blue-500">Test</h2> */}
+
+                <NavigationMenu className="nav-menu">
+                    <NavigationMenuList className="nav-menu-list">
+                        <NavigationMenuItem>
+                        <NavigationMenuTrigger className="text-red-500">Item One</NavigationMenuTrigger>
+                        <NavigationMenuContent className="nav-menu-content">
+                            <NavigationMenuLink>Link</NavigationMenuLink>
+                            <NavigationMenuLink>Link 2</NavigationMenuLink>
+                            <NavigationMenuLink>Link 3</NavigationMenuLink>
+                            <NavigationMenuLink>Link 4</NavigationMenuLink>
+                            <NavigationMenuLink>Link 5</NavigationMenuLink>
+                        </NavigationMenuContent>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
+
+
+
             </nav>
         </header>
 
