@@ -11,6 +11,7 @@ export function useToggle({
 
     function toggle() {
         setOn(prevOn=>!prevOn)
+        console.log("doro clicked, dood!")
     }
     return [on, toggle]
 }

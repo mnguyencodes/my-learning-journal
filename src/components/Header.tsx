@@ -12,6 +12,7 @@ import {
     NavigationMenuViewport,
   } from "@/components/ui/navigation-menu"
   
+import NavIcon from "../components/Menu/NavIcon"
 
 import {useState} from "react"
 
@@ -54,19 +55,21 @@ export default function Header() {
                 <NavigationMenu className="nav-menu">
                     <NavigationMenuList className="nav-menu-list">
                         <NavigationMenuItem>
-                        <NavigationMenuTrigger className="text-red-500">Item One</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className=""></NavigationMenuTrigger>
                         <NavigationMenuContent className="nav-menu-content">
-                            <NavigationMenuLink>Link</NavigationMenuLink>
-                            <NavigationMenuLink>Link 2</NavigationMenuLink>
-                            <NavigationMenuLink>Link 3</NavigationMenuLink>
-                            <NavigationMenuLink>Link 4</NavigationMenuLink>
-                            <NavigationMenuLink>Link 5</NavigationMenuLink>
+                            <NavigationMenuLink href="/">Link</NavigationMenuLink>
+                            <NavigationMenuLink href="/link2">Link 2</NavigationMenuLink>
+                            <NavigationMenuLink href="/link3">Link 3</NavigationMenuLink>
+                            <NavigationMenuLink href="/link4">Link 4</NavigationMenuLink>
+                            <NavigationMenuLink href="/link5">Link 5</NavigationMenuLink>
                         </NavigationMenuContent>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
 
+            {/* <NavIcon /> */}
 
+            <span>Test</span>
 
             </nav>
         </header>

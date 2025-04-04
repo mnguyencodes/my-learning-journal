@@ -2,8 +2,14 @@ import * as React from "react"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import { ChevronDownIcon } from "lucide-react"
+import NavIcon from "../Menu/NavIcon"
+import {useToggle} from "../../hooks/useToggle"
+import {Link} from "react-router"
 
 import { cn } from "@/lib/utils"
+
+const NavigationMenuContext = React.createContext(undefined)
+export {NavigationMenuContext}
 
 function NavigationMenu({
   className,
@@ -13,19 +19,26 @@ function NavigationMenu({
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Root> & {
   viewport?: boolean
 }) {
+
+  const [open, toggleOpen] = useToggle({
+    initialValue: true,
+  })
+
   return (
-    <NavigationMenuPrimitive.Root
-      data-slot="navigation-menu"
-      data-viewport={viewport}
-      className={cn(
-        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
-        className
-      )}
-      {...props}
-    >
-      {children}
-      {viewport && <NavigationMenuViewport />}
-    </NavigationMenuPrimitive.Root>
+    <NavigationMenuContext.Provider value={{open, toggleOpen}}>
+      <NavigationMenuPrimitive.Root
+        data-slot="navigation-menu"
+        data-viewport={viewport}
+        className={cn(
+          "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
+          className
+        )}
+        {...props}
+      >
+        {children}
+        {viewport && <NavigationMenuViewport />}
+      </NavigationMenuPrimitive.Root>
+    </NavigationMenuContext.Provider>
   )
 }
 
@@ -67,17 +80,21 @@ function NavigationMenuTrigger({
   children,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Trigger>) {
+
+  const open = React.useContext(NavigationMenuContext)
+  const toggleOpen = React.useContext(NavigationMenuContext)
+
   return (
     <NavigationMenuPrimitive.Trigger
       data-slot="navigation-menu-trigger"
       className={cn(navigationMenuTriggerStyle(), "group", className)}
       {...props}
     >
-      {children}{" "}
-      <ChevronDownIcon
+      <NavIcon open={open} onClick={toggleOpen} />
+      {/* <NavIcon
         className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
-      />
+      /> */}
     </NavigationMenuPrimitive.Trigger>
   )
 }
@@ -123,17 +140,21 @@ function NavigationMenuViewport({
 
 function NavigationMenuLink({
   className,
+  children,
+  href,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Link>) {
   return (
-    <NavigationMenuPrimitive.Link
+    <NavigationMenuPrimitive.Link asChild
       data-slot="navigation-menu-link"
       className={cn(
         "data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       {...props}
-    />
+    >
+      <Link to={href} >{children}</Link>
+    </NavigationMenuPrimitive.Link>
   )
 }
 
