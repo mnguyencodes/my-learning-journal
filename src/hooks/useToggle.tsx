@@ -5,12 +5,12 @@ export function useToggle({
     initialValue=false,
     onToggle=()=>{}
 }) {
-    const [on, setOn] = useState(initialValue)
+    const [on, setOn] = useState<boolean>(initialValue)
 
     useEffectOnUpdate(onToggle, [on])
 
     function toggle() {
         setOn(prevOn=>!prevOn)
     }
-    return [on, toggle]
+    return [on, toggle] as const
 }

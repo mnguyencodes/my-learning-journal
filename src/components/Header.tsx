@@ -1,5 +1,5 @@
 import "./Header.css"
-import Menu from "./Menu/index"
+import * as Menu from "./Menu/index"
 import {Link} from "react-router-dom"
 
 
@@ -7,10 +7,10 @@ import {useState} from "react"
 
 export default function Header() {
 
-    const links = [
-        {href: "", text: "Home"},
-        {href: "about-me", text: "About Me"}
-    ]
+    // const links = [
+    //     {href: "", text: "Home"},
+    //     {href: "about-me", text: "About Me"}
+    // ]
 
 
     // Used for testing purposes
