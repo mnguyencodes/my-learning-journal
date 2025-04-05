@@ -1,4 +1,4 @@
-import "./Menu.css"
+import "./_Menu.css"
 export default function HamburgerIcon({...rest}) {
     return (
         <>
