@@ -32,12 +32,10 @@ export default function Header() {
         <>
         <header>
             <nav>
-                <Link to=".">
-                    <div className="container">
-                        <img src="/images/logo.png" alt="My Learning Journal logo" />
-                        <p>My Learning Journal</p>
-                    </div>
-                </Link>
+                <div className="container">
+                    <Link to="."><img src="/images/logo.png" alt="My Learning Journal logo" /></Link>
+                    <Link to="."><p>My Learning Journal</p></Link>
+                </div>
                 <Menu.Menu onOpen={increment}>
                     <Menu.MenuIcon />
                     <Menu.MenuDropdown>
