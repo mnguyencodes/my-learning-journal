@@ -1,4 +1,4 @@
-import "./Menu.css"
+import "./_Menu.css"
 import {useContext} from "react"
 import {MenuContext} from "./Menu"
 
