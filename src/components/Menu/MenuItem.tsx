@@ -1,4 +1,4 @@
-import "./_Menu.css"
+import "./Menu.css"
 
 import {Link} from "react-router-dom"
 
