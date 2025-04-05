@@ -1,10 +1,10 @@
 /* Menu */
 
 div.menu {
-    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 5em;
 }
 
 /* MenuIcon - HamburgerIcon */
@@ -19,22 +19,14 @@ div.hamburger {
 
 a.menu-item-link {
     padding-inline: 1em;
-    padding-block: 1.5em;
-    border-bottom: 1px solid #cacfd7;
-}
-
-a.menu-item-link:hover {
-    background-color: #e0e6ef;
+    margin-block: 1.5em;
 }
 
 /* MenuDropdown */
 
 .menu-dropdown {
-    position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #ECECEC;
-    margin-top: 1em;
 }
 
 div.hamburger-container {
@@ -42,8 +34,9 @@ div.hamburger-container {
     flex-direction: column;
     gap: 0.3em;
     width: auto;
+    padding: 1em;
+    margin-block: 0;
     margin-left: auto;
-    margin-right: 5%;
     cursor: pointer;
 }
 

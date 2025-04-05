@@ -6,31 +6,22 @@ header {
 }
   
 nav,
-nav > div.container {
+nav > div.container,
+nav ul {
   display: flex;
+  align-items: center;
   gap: 0.188em;
 }
-
-nav > div.container {
-  margin-left: 1em;
-  align-items: center;
   
-}
-
-nav > div.menu-container {
-  margin-right: 0;
-}
-
 nav {
-  display: flex;
-  gap: 1em;
   z-index: 1;
+  justify-content: space-between;
   background-color: #ECECEC;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   font-size: 0.75rem;
   font-weight: bold;
-  padding-block: 1em;
+  padding: 0 1.25em;
 }
   
 nav ul {

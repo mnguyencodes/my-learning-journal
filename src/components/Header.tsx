@@ -12,12 +12,6 @@ export default function Header() {
         {href: "about-me", text: "About Me"}
     ]
 
-    // To be rendered only for wider screens.
-    // <ul>
-    //     <li><Link to="">Home</Link></li>
-    //     <li><Link to="about-me">About Me</Link></li>
-    // </ul>
-
 
     // Used for testing purposes
     const [count, setCount] = useState(0)
@@ -36,17 +30,21 @@ export default function Header() {
                     <Link to="."><img src="/images/logo.png" alt="My Learning Journal logo" /></Link>
                     <Link to="."><p>My Learning Journal</p></Link>
                 </div>
-                <Menu.Menu onOpen={increment}>
-                    <Menu.MenuIcon />
-                    <Menu.MenuDropdown>
-                        <Menu.MenuItem to=".">Item1</Menu.MenuItem>
-                        <Menu.MenuItem to=".">Item2</Menu.MenuItem>
-                        <Menu.MenuItem to=".">Item3</Menu.MenuItem>
-                    </Menu.MenuDropdown>
-                </Menu.Menu>
+                <ul>
+                    <li><Link to="">Home</Link></li>
+                    <li><Link to="about-me">About Me</Link></li>
+                </ul>
             </nav>
         </header>
-
+        <Menu.Menu onOpen={increment}>
+            <Menu.MenuIcon />
+            <Menu.MenuDropdown>
+                <Menu.MenuItem to=".">Item1</Menu.MenuItem>
+                <Menu.MenuItem to=".">Item2</Menu.MenuItem>
+                <Menu.MenuItem to=".">Item3</Menu.MenuItem>
+            </Menu.MenuDropdown>
+        </Menu.Menu>
         </>
     )
 }
+
